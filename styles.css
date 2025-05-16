@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #468189;
+    color: rgb(48, 48, 48);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+        text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #031926;
+    color: rgb(255, 255, 255)
+}
+
+.imagenes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px; /* más chico */
+    height: auto; /* mantiene proporción */
+    border-radius: 50%;
+    display: block;
+    margin: 0; /* elimina el centrado */
+    
+}
+
+.logo {
+    float: left;
+    margin-right: 1px; /* separa del título */
+}
+
+.imagenes {
+    display: flex; /* Establece Flexbox como modelo de diseño para alinear elementos hijos en fila o columna */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si no caben en una sola */
+    gap: 15px; /* Define el espacio (margen) entre los elementos flexibles */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+}
+
+.mini-img {
+    width: 400px; /* Especifica el ancho fijo de cada imagen miniatura */
+    height: auto; /* Mantiene la proporción de la imagen automáticamente */
+    object-fit: cover; /* Ajusta la imagen para que cubra su contenedor sin deformarse */
+    border-radius: 5px; /* Bordes ligeramente redondeados para estética */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen, indicando que es interactiva */
+    transition: transform 0.3s, box-shadow 0.3s; /* Agrega animación suave en escala y sombra al hacer hover */
+}
+
+.mini-img:hover {
+    transform: scale(1.05); /* Agranda ligeramente la imagen al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Aplica una sombra alrededor para destacar la imagen */
+}
+
+.img-circulacion,
+.img-esquema {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de su contenedor */
+    max-width: 800px; /* Limita el ancho máximo para evitar que se vea demasiado grande en pantallas grandes */
+    height: auto; /* Mantiene proporciones originales */
+    display: block; /* Hace que las imágenes se comporten como bloques (para aplicar márgenes) */
+    margin: 10px auto; /* Agrega espacio arriba y abajo, y centra horizontalmente */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.conservacion {
+    background-color: #468189;
+    color: white;
+}
+
+.educacion {
+    background-color: #77ACA2;
+    color: white;
+}
+
+.recreacion {
+    background-color: #F4E9CD;
+    color: black; /* buena legibilidad */
+}
+tr:hover {
+    background-color: #d3d3d3; 
+    cursor: pointer; /* interactivo */
+}
+
+
+
+/* clase 02/5 */
+
+#MenuCSS3 ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#MenuCSS3 a{
+    display: block;
+    padding: 1em 2em; /* Ajuste del padding */
+    background-color: #468189;
+    text-decoration: none;
+    color: #191C26;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+#MenuCSS3 a:hover {
+    background-color: #497077;
+
+}
+#MenuCSS3 ul li {
+    position: relative; /* Necesario para el submenú */
+}
+#MenuCSS3 ul li ul {
+    display: none;
+    position: absolute; /* Posiciona el submenú */
+    top: 100%; /* Muestra el submenú debajo del elemento padre */
+    left: 0;
+    padding: 0; /* Elimina padding del submenú */
+    margin: 0;
+    list-style: none;
+    background-color: #457075; /* Color de fondo del submenú */
+}
+#MenuCSS3 ul li:hover ul {
+    display: block; /* Muestra el submenú al pasar el mouse */
+}
+
+#MenuCSS3 ul li ul li a {
+    padding: 1em; /* Ajusta el padding para los elementos del submenú */
+}
+
+div {
+    color: white;
+}
+
